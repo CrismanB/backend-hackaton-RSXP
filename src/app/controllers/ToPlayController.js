@@ -5,7 +5,7 @@ class ToPlayController {
         const { title, statement, instructions, answer } = await Play.create(
             req.body
         );
-        return res.status(400).json({ title, statement, instructions, answer });
+        return res.status(200).json({ title, statement, instructions, answer });
     }
 
     async index(req, res) {
